@@ -143,7 +143,7 @@ if __name__ == "__main__":
             paper="https://arxiv.org/pdf/2103.00020",
             blog="https://openai.com/blog/clip/",
             training_log_url="https://wandb.ai/manan-goel/clip-lightning-image_retrieval/runs/1cedtohj",
-            notebook_path=os.path.join(path_here, "Interacting_with_CLIP.ipynb"),
+            notebook_path=os.path.join(poster_dir, "Interacting_with_CLIP.ipynb"),
             launch_gradio=True,
             tab_order=[
                 "Blog",
