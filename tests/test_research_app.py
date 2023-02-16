@@ -26,7 +26,7 @@ class LightningAppTestInt(LightningTestApp):
 
 
 def test_research_app():
-    cwd = os.getcwd()
+    cwd = os.path.dirname(__file__)
     cwd = os.path.join(cwd, "app.py")
     command_line = [
         cwd,

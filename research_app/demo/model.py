@@ -4,7 +4,7 @@ import gradio as gr
 from lightning.app.components.serve import ServeGradio
 from rich.logging import RichHandler
 
-from research_app.clip_demo import CLIPDemo
+from research_app.demo.clip import CLIPDemo
 
 FORMAT = "%(message)s"
 logging.basicConfig(level="NOTSET", format=FORMAT, datefmt="[%X]", handlers=[RichHandler()])
