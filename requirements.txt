@@ -7,4 +7,4 @@ transformers==4.27.4
 nbconvert==7.2.10
 jupyterlite==0.1.0b18
 lightning==1.9.*
-jupyterlab==3.6.1
+jupyterlab==3.6.3
