@@ -1,5 +1,5 @@
 markdown-poster @ https://github.com/Lightning-Universe/MarkDown-poster_component/archive/refs/heads/main.zip
-rich==13.3.1
+rich==13.3.3
 torch==1.13.1
 torchvision==0.14.1
 gradio==3.19.1
