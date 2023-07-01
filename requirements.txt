@@ -2,7 +2,7 @@ markdown-poster @ https://github.com/Lightning-Universe/MarkDown-poster_componen
 rich==13.4.2
 torch==2.0.1
 torchvision==0.15.2
-gradio==3.32.0
+gradio==3.35.2
 transformers==4.27.4
 nbconvert==7.4.0
 jupyterlite==0.1.0
