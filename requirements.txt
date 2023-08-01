@@ -4,7 +4,7 @@ torch==2.0.1
 torchvision==0.15.2
 gradio==3.35.2
 transformers==4.27.4
-nbconvert==7.4.0
+nbconvert==7.7.3
 jupyterlite==0.1.0
 lightning==1.9.*
 jupyterlab==4.0.2
