@@ -3,7 +3,7 @@ rich==13.6.0
 torch==2.0.1
 torchvision==0.15.2
 gradio==3.41.2
-transformers==4.34.1
+transformers==4.35.2
 nbconvert==7.8.0
 jupyterlite==0.2.0
 lightning==2.0.*
