@@ -2,7 +2,7 @@ import logging
 import os.path
 import subprocess
 
-from lightning import LightningApp, LightningFlow, LightningWork
+from lightning.app import LightningApp, LightningFlow, LightningWork
 
 logger = logging.getLogger(__name__)
 

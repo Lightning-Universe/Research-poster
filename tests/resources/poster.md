@@ -69,14 +69,14 @@ graph LR
 ### Available at : `Lightning-AI/lightning-template-research-app/app.py`
 
 ```python
-import lightning as L
+from lightning.app import LightningApp
 
 paper = "https://arxiv.org/pdf/2103.00020.pdf"
 blog = "https://openai.com/blog/clip/"
 github = "https://github.com/soumik12345/clip-lightning/tree/AddModelCheckpoint"
 wandb = "https://wandb.ai/manan-goel/clip-lightning-image_retrieval/runs/1cedtohj"
 
-app = L.LightningApp(
+app = LightningApp(
     ResearchApp(
         resource_path="resources",
         paper=paper,
