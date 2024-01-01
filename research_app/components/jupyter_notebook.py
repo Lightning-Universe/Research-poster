@@ -3,7 +3,7 @@ import os
 import subprocess
 from pathlib import Path
 
-from lightning import LightningWork
+from lightning.app import LightningWork
 
 logger = logging.getLogger(__name__)
 

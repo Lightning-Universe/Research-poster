@@ -2,7 +2,7 @@ import logging
 from typing import Dict, List, Union
 
 import streamlit as st
-from lightning import LightningFlow, LightningWork
+from lightning.app import LightningFlow, LightningWork
 from lightning.app.frontend import StreamlitFrontend
 from lightning.app.utilities.state import AppState
 from rich.logging import RichHandler

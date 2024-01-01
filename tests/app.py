@@ -2,7 +2,7 @@ import logging
 import os
 from typing import Dict, List, Optional
 
-import lightning as L
+from lightning.app import LightningFlow, LightningApp
 from lightning.app.frontend import StaticWebFrontend
 from poster import Poster
 from rich import print
@@ -18,7 +18,7 @@ logging.basicConfig(level="NOTSET", format=FORMAT, datefmt="[%X]", handlers=[Ric
 logger = logging.getLogger(__name__)
 
 
-class StaticNotebookViewer(L.LightningFlow):
+class StaticNotebookViewer(LightningFlow):
     def __init__(self, notebook_path: str):
         super().__init__()
         self.serve_dir = notebook_to_html(notebook_path)
@@ -27,7 +27,7 @@ class StaticNotebookViewer(L.LightningFlow):
         return StaticWebFrontend(serve_dir=self.serve_dir)
 
 
-class ResearchApp(L.LightningFlow):
+class ResearchApp(LightningFlow):
     """Share your paper "bundled" with the arxiv link, poster, live jupyter notebook, interactive demo to try the model
     and more!
 
@@ -137,7 +137,7 @@ if __name__ == "__main__":
     path_here = os.path.dirname(__file__)
     poster_dir = os.path.join(path_here, "resources")
 
-    app = L.LightningApp(
+    app = LightningApp(
         ResearchApp(
             poster_dir=poster_dir,
             paper="https://arxiv.org/pdf/2103.00020",
